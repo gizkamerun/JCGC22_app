@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <title>JCGC :: Dec 2022</title>
+
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="theme-color" content="#387ef5">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+
+
+    <base href="/">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/appicon.png">
+    <link rel="apple-touch-icon" href="assets/img/appicon.png">
+    <link rel="manifest" href="manifest.json">
+<style>@charset "UTF-8";:root{--ion-color-primary:#3d8d1f;--ion-color-primary-rgb:61, 141, 31;--ion-color-primary-contrast:#ffffff;--ion-color-primary-contrast-rgb:255, 255, 255;--ion-color-primary-shade:#367c1b;--ion-color-primary-tint:#509835;--ion-color-secondary:#6F6F6F;--ion-color-secondary-rgb:111, 111, 111;--ion-color-secondary-contrast:#ffffff;--ion-color-secondary-contrast-rgb:255, 255, 255;--ion-color-secondary-shade:#626262;--ion-color-secondary-tint:#7d7d7d;--ion-color-tertiary:#876BA1;--ion-color-tertiary-rgb:135, 107, 161;--ion-color-tertiary-contrast:#ffffff;--ion-color-tertiary-contrast-rgb:255, 255, 255;--ion-color-tertiary-shade:#775e8e;--ion-color-tertiary-tint:#937aaa;--ion-color-success:#89AE10;--ion-color-success-rgb:137, 174, 16;--ion-color-success-contrast:#000000;--ion-color-success-contrast-rgb:0, 0, 0;--ion-color-success-shade:#79990e;--ion-color-success-tint:#95b628;--ion-color-warning:#FDC400;--ion-color-warning-rgb:253, 196, 0;--ion-color-warning-contrast:#000000;--ion-color-warning-contrast-rgb:0, 0, 0;--ion-color-warning-shade:#dfac00;--ion-color-warning-tint:#fdca1a;--ion-color-danger:#eb445a;--ion-color-danger-rgb:235, 68, 90;--ion-color-danger-contrast:#ffffff;--ion-color-danger-contrast-rgb:255, 255, 255;--ion-color-danger-shade:#cf3c4f;--ion-color-danger-tint:#ed576b;--ion-color-medium:#92949c;--ion-color-medium-rgb:146, 148, 156;--ion-color-medium-contrast:#000000;--ion-color-medium-contrast-rgb:0, 0, 0;--ion-color-medium-shade:#808289;--ion-color-medium-tint:#9d9fa6;--ion-color-light:#f4f5f8;--ion-color-light-rgb:244, 245, 248;--ion-color-light-contrast:#000000;--ion-color-light-contrast-rgb:0, 0, 0;--ion-color-light-shade:#d7d8da;--ion-color-light-tint:#f5f6f9;--ion-color-ruraldev:#f3af42;--ion-color-ruraldev-rgb:243, 175, 66;--ion-color-ruraldev-contrast:#000000;--ion-color-ruraldev-contrast-rgb:0, 0, 0;--ion-color-ruraldev-shade:#d69a3a;--ion-color-ruraldev-tint:#f4b755;--ion-color-healthsocialpro:#91c8cf;--ion-color-healthsocialpro-rgb:145, 200, 207;--ion-color-healthsocialpro-contrast:#000000;--ion-color-healthsocialpro-contrast-rgb:0, 0, 0;--ion-color-healthsocialpro-shade:#80b0b6;--ion-color-healthsocialpro-tint:#9cced4}:root{--ion-color-favorite:#69bb7b;--ion-color-favorite-rgb:105, 187, 123;--ion-color-favorite-contrast:#ffffff;--ion-color-favorite-contrast-rgb:255, 255, 255;--ion-color-favorite-shade:#5ca56c;--ion-color-favorite-tint:#78c288;--ion-color-twitter:#1da1f4;--ion-color-twitter-rgb:29, 161, 244;--ion-color-twitter-contrast:#ffffff;--ion-color-twitter-contrast-rgb:255, 255, 255;--ion-color-twitter-shade:#1a8ed7;--ion-color-twitter-tint:#34aaf5;--ion-color-instagram:#5956d8;--ion-color-instagram-rgb:89, 86, 216;--ion-color-instagram-contrast:#ffffff;--ion-color-instagram-contrast-rgb:255, 255, 255;--ion-color-instagram-shade:#4e4cbe;--ion-color-instagram-tint:#6a67dc;--ion-color-vimeo:#23b6ea;--ion-color-vimeo-rgb:35, 182, 234;--ion-color-vimeo-contrast:#ffffff;--ion-color-vimeo-contrast-rgb:255, 255, 255;--ion-color-vimeo-shade:#1fa0ce;--ion-color-vimeo-tint:#39bdec;--ion-color-facebook:#3b5998;--ion-color-facebook-rgb:59, 89, 152;--ion-color-facebook-contrast:#ffffff;--ion-color-facebook-contrast-rgb:255, 255, 255;--ion-color-facebook-shade:#344e86;--ion-color-facebook-tint:#4f6aa2}:root{--ion-headings-font-weight:300;--ion-color-angular:#ac282b;--ion-color-communication:#8e8d93;--ion-color-tooling:#fe4c52;--ion-color-services:#fd8b2d;--ion-color-design:#fed035;--ion-color-workshop:#69bb7b;--ion-color-food:#3bc7c4;--ion-color-documentation:#b16be3;--ion-color-navigation:#6600cc}html{--ion-font-family:var(--ion-default-font)}body{background:var(--ion-background-color)}@supports (padding-top: 20px){html{--ion-safe-area-top:var(--ion-statusbar-padding)}}@supports (padding-top: constant(safe-area-inset-top)){html{--ion-safe-area-top:constant(safe-area-inset-top);--ion-safe-area-bottom:constant(safe-area-inset-bottom);--ion-safe-area-left:constant(safe-area-inset-left);--ion-safe-area-right:constant(safe-area-inset-right)}}@supports (padding-top: env(safe-area-inset-top)){html{--ion-safe-area-top:env(safe-area-inset-top);--ion-safe-area-bottom:env(safe-area-inset-bottom);--ion-safe-area-left:env(safe-area-inset-left);--ion-safe-area-right:env(safe-area-inset-right)}}*{box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}html{width:100%;height:100%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%}html:not(.hydrated) body{display:none}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;margin:0;padding:0;position:fixed;width:100%;max-width:100%;height:100%;max-height:100%;transform:translateZ(0);text-rendering:optimizeLegibility;overflow:hidden;touch-action:manipulation;-webkit-user-drag:none;-ms-content-zooming:none;word-wrap:break-word;overscroll-behavior-y:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}html{font-family:var(--ion-default-font);font-family:var(--ion-font-family)}:root{--swiper-theme-color:#007aff}</style><link rel="stylesheet" href="styles.3cf7ebc038c9a31c.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.3cf7ebc038c9a31c.css"></noscript></head>
+
+<body>
+
+    <app-root></app-root>
+
+    <!-- Replace the API key with your own, see:
+    https://developers.google.com/maps/documentation/javascript/get-api-key -->
+    <!-- <script async="" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pf6ZdFQj5qw7rc_HSGrhUwQKfIe9ICw"></script> -->
+
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime.07f6dabc69e7edfd.js" type="module"></script><script src="polyfills.0fd43a1a57033b65.js" type="module"></script><script src="main.567a7f655af01ad5.js" type="module"></script>
+
+</body></html>

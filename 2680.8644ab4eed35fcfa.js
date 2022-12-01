@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[2680],{2680:(o,n,e)=>{e.r(n),e.d(n,{SplashScreenWeb:()=>_});var s=e(5861),r=e(7423);class _ extends r.Uw{show(a){return(0,s.Z)(function*(){})()}hide(a){return(0,s.Z)(function*(){})()}}}}]);
